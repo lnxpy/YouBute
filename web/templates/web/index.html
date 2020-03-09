@@ -1,0 +1,199 @@
+{% extends "web/base.html" %}
+{% load static %}
+
+{% block title %}
+YouBute - Media Downloader
+{% endblock %}
+
+{% block navbar %}
+<nav class="main-nav float-right d-none d-lg-block">
+  <ul>
+    <li class="active"><a href="#intro">Home</a></li>
+    <li><a href="#about">About Us</a></li>
+    <li><a href="#services">Services</a></li>
+  </ul>
+</nav><!-- .main-nav -->
+{% endblock %}
+
+{% block content %}
+<!--==========================
+    Intro Section
+  ============================-->
+<section id="intro" class="clearfix">
+  <div class="container">
+
+    <div class="intro-img">
+      <img src="{% static 'web/img/intro-img.svg' %}" alt="" class="img-fluid">
+    </div>
+
+    <div class="intro-info">
+      <h2>YouBute,<br>Download Media from <span><img src="https://img.icons8.com/color/70/000000/youtube-play.png"></span> & <span><img src="https://img.icons8.com/color/70/000000/soundcloud.png"></span> for Free!</h2>
+      <div>
+        <a href="#services" class="btn-services scrollto">Get Started</a>
+      </div>
+    </div>
+
+  </div>
+</section><!-- #intro -->
+
+<main id="main">
+
+  <!--==========================
+      About Us Section
+    ============================-->
+  <section id="about">
+    <div class="container">
+
+      <header class="section-header">
+        <h3>About Us</h3>
+      </header>
+
+      <div id="team">
+        <center>
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="member">
+              <img src="{% static 'web/img/owner.jpg' %}" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Ali Reza Yahyapour</h4>
+                  <span>Software Developer & Student at the EITTC</span>
+                  <div class="social">
+                    <a href="https://github.com/lnxpy"><i class="fa fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/ali-reza-yahyapour-18b896164/"><i class="fa fa-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </center>
+      </div>
+
+
+
+      <header class="section-header quote">
+        <p>I'm <strong>Ali Reza</strong> the founder of YouBute. Back-end developer. Familiar with Python, Django, C, C#, Network. Big fan of Deep Learning & ML, and so on. Trying to make some noises via AI.</p>
+      </header>
+
+      <div class="row about-container">
+
+        <div class="col-lg-6 content order-lg-1 order-2">
+          <p>
+          YouBute is a kind of media-downloaded from un-downloadable websites. You may ask, is there any way to have YouTube, SoundCloud, Instagram, and any one's media on your own system, but the answer is you can have. Take a look at what does the YouBute give its users.
+        </p>
+
+          <div class="icon-box wow fadeInUp">
+            <div class="icon"><i class="fa fa-shopping-bag"></i></div>
+            <h4 class="title">Free Services</h4>
+            <p class="description">Download any tracks, videos, posts from anywhere on YouBute for free at any time anywhere.</p>
+          </div>
+
+          <div class="icon-box wow fadeInUp" data-wow-delay="0.2s">
+            <div class="icon"><i class="fa fa-photo"></i></div>
+            <h4 class="title">Free Disk Space</h4>
+            <p class="description">Free 500Mb hosting space. Be aware, your media will be removed after 30 minutes.</p>
+          </div>
+
+        </div>
+
+        <div class="col-lg-6 background order-lg-2 order-1 wow fadeInUp">
+          <img src="{% static 'web/img/about-img.svg' %}" class="img-fluid" alt="">
+        </div>
+      </div>
+
+      <div class="row about-extra">
+        <div class="col-lg-6 wow fadeInUp">
+          <img src="{% static 'web/img/about-extra-2.svg' %}" class="img-fluid" alt="">
+        </div>
+        <div class="col-lg-6 wow fadeInUp pt-5 pt-lg-0">
+          <h4>Inside to Outside</h4>
+          <p>
+            You may not be able to use foreign services such as YouTube, Twitter, SoundCloud, and others. YouBute is located in the USA which means that YouBute can provide services for you. It stores media in its host for you.
+          </p>
+          <p>
+            First, you make a connection with the YouBute server, then you want it to store videos for you and it does. YouBute uses <a href="https://pypi.org/project/pytube/">pytube</a> library to store media from the YouTube.
+          </p>
+        </div>
+      </div>
+
+      <div class="row about-extra">
+        <div class="col-lg-6 wow fadeInUp order-1 order-lg-2">
+          <img src="{% static 'web/img/about-extra-1.svg' %}" class="img-fluid" alt="">
+        </div>
+
+        <div class="col-lg-6 wow fadeInUp pt-4 pt-lg-0 order-2 order-lg-1">
+          <h4>How You Access Media?</h4>
+          <p>
+            First of all, you request to the server, then server wants pytube to download the given URL which refers to the YouTube video. Then, the video gets ready for the YouBute host and you have access to your media.
+          </p>
+          <p>
+            Now, you have 6 hours to download and share the given URL.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section><!-- #about -->
+
+
+  <!--==========================
+          Services Section
+        ============================-->
+  <section id="services" class="section-bg">
+    <div class="container">
+
+      <header class="section-header">
+        <h3>Services</h3>
+        <p>Let's take a look at what YouBute gives its users. Here are some services YouBute provides for you.</p>
+      </header>
+
+      <div class="card-deck">
+        <div class="card">
+          <!--<img class="card-img-top" src="..." alt="Card image cap">-->
+          <div class="card-body">
+            <h5 class="card-title">YouTube Video Downloader</h5>
+            <p class="card-text">Carry up the link of the video you want to have and put it here. YouBute makes it available for you.</p>
+
+            <form method="post">
+              {% csrf_token %}
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="basic-addon1"><span class="fa fa-youtube-play youtube"></span></span>
+                </div>
+                <input type="url" class="form-control" id="url" name="url" placeholder="Video URL" required>
+              </div>
+              <input onclick="NeedRatingList()" class="btn btn-youtube" type="submit" value="Download">
+              <span>
+                <img class="ajaxProgress" src="{% static 'web/img/eclipse.gif' %}">
+              </span>
+            </form>
+          </div>
+          <div class="card-footer">
+            <p class="card-text"><small class="text-muted">Powered by <a href="https://pypi.org/project/pytube/">Pytube</a></small></p>
+          </div>
+        </div>
+
+        <div class="card disabled">
+          <!--<img class="card-img-top" src="..." alt="Card image cap">-->
+          <div class="card-body">
+            <h5 class="card-title">SoundCloud Track Downloader</h5>
+            <p class="card-text">You want to have your favorite song which is in SoundCloud? Try this one. Download whatever you want from the SoundCloud.</p>
+
+            <form>
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="basic-addon1"><span class="fa fa-soundcloud soundcloud"></span></span>
+                </div>
+                <input type="url" class="form-control" placeholder="Playlist URL" required>
+              </div>
+              <input type="submit" class="btn btn-soundcloud" value="Download">
+            </form>
+
+          </div>
+        </div>
+      </div>
+  </section><!-- #services -->
+
+
+</main>
+{% endblock %}

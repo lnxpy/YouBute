@@ -1,0 +1,61 @@
+{% extends "web/base.html" %}
+{% load static %}
+
+{% block title %}
+YouBute - Download
+{% endblock%}
+
+{% block navbar %}
+<nav class="main-nav float-right d-none d-lg-block">
+  <ul>
+    <li><a href="/">Home</a></li>
+  </ul>
+</nav><!-- .main-nav -->
+{% endblock %}
+
+{% block content %}
+
+<section id="message" class="clearfix">
+  <div class="container">
+    {% if status %}
+    <div class="card border-success shadow mb-3">
+      <div class="card-body text-success">
+        <h5 class="card-title">Download Completed!</h5>
+        <p>Media has been transformed to the YouBute host. Now it's available for you to download it.<br>Be careful..</p>
+        <ul>
+          <li class="etm"><span>Media will be removed after 30 minutes</li>
+          <li class="etm">Media link URL won't work after the existence duration</li>
+          <li class="etm">Resolution has chosen with the lowest one (High-res options will add)</li>
+        </ul>
+        <hr>
+        <form action="{{path}}">
+          <button type="submit" class="btn btn-success" id="">Download</button>
+        </form>
+      </div>
+    </div>
+    {% else %}
+    <div class="card border-danger shadow mb-3">
+      <div class="card-body text-danger">
+        <h5 class="card-title">Download Failed!</h5>
+        <p>Sorry, we could not download the media. Check the list below to solve this problem.<br>The reson might be..</p>
+        <ul>
+          <li class="etm"><span>Your link could not be found</li>
+          <li class="etm">Media size is out of range</li>
+          <li class="etm">Connection between YouBute and destination refused</li>
+          <li class="etm">YouBute host has no more enough free space</li>
+          <li class="etm">Server system crash</li>
+        </ul>
+        <h5>REQUEST ERROR</h5>
+        <code><kbd>{{error}}</kbd></code>
+        <hr>
+        <form action="/">
+          <button type="submit" class="btn btn-danger" id="">Get Back</button>
+        </form>
+      </div>
+    </div>
+    {% endif %}
+  </div>
+</section><!-- #intro -->
+
+
+{% endblock %}

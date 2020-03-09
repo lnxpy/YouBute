@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>{% block title %}{% endblock %}</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="{% static 'web/img/favicon.png' %}" rel="icon">
+  <link href="{% static 'web/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="{% static 'web/lib/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="{% static 'web/lib/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet">
+  <link href="{% static 'web/lib/animate/animate.min.css' %}" rel="stylesheet">
+  <link href="{% static 'web/lib/ionicons/css/ionicons.min.css' %}" rel="stylesheet">
+  <link href="{% static 'web/lib/owlcarousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
+  <link href="{% static 'web/lib/lightbox/css/lightbox.min.css' %}" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="{% static 'web/css/style.css' %}" rel="stylesheet">
+
+  <!-- =======================================================
+    Theme Name: NewBiz
+    Theme URL: https://bootstrapmade.com/newbiz-bootstrap-business-template/
+    Author: BootstrapMade.com
+    License: https://bootstrapmade.com/license/
+  ======================================================= -->
+</head>
+
+<body>
+
+  <!--==========================
+  Header
+  ============================-->
+  <header id="header" class="fixed-top">
+    <div class="container">
+
+      <div class="logo float-left">
+        <h1 class="text-light"><a href="/"><span>YouBute</span></a></h1>
+      </div>
+
+      {% block navbar %}
+      {% endblock %}
+
+    </div>
+  </header><!-- #header -->
+
+
+{% block content %}
+{% endblock %}
+
+  <!--==========================
+    Footer
+  ============================-->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        <strong>YouBute</strong> Made with <span class="fa fa-heart"></span>
+      </div>
+      <div class="credits">
+        <!--
+          All the links in the footer should remain intact.
+          You can delete the links only if you purchased the pro version.
+          Licensing information: https://bootstrapmade.com/license/
+          Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=NewBiz
+        -->
+        Template by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- #footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+  <!-- Uncomment below i you want to use a preloader -->
+  <!-- <div id="preloader"></div> -->
+
+  <!-- JavaScript Libraries -->
+  <script src="{% static 'web/lib/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'web/lib/jquery/jquery-migrate.min.js' %}"></script>
+  <script src="{% static 'web/lib/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'web/lib/easing/easing.min.js' %}"></script>
+  <script src="{% static 'web/lib/mobile-nav/mobile-nav.js' %}"></script>
+  <script src="{% static 'web/lib/wow/wow.min.js' %}"></script>
+  <script src="{% static 'web/lib/waypoints/waypoints.min.js' %}"></script>
+  <script src="{% static 'web/lib/counterup/counterup.min.js' %}"></script>
+  <script src="{% static 'web/lib/owlcarousel/owl.carousel.min.js' %}"></script>
+  <script src="{% static 'web/lib/isotope/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'web/lib/lightbox/js/lightbox.min.js' %}"></script>
+  <!-- Contact Form JavaScript File -->
+  <script src="{% static 'web/contactform/contactform.js' %}"></script>
+
+  <!-- Template Main Javascript Files -->
+  <script src="{% static 'web/js/main.js' %}"></script>
+  <script src="{% static 'web/js/loader.js' %}"></script>
+
+  <script type="text/javascript">
+  </script>
+
+</body>
+</html>
