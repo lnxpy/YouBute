@@ -18,7 +18,10 @@ Now, you should have such a thing on your local browser. You can change the temp
 
 <p align="center">
   <img src="https://github.com/lnxpy/youbute/blob/master/shots/sh2.png"><br>
-  <b>Home Page</b> - <a href="https://youbute.pythonanywhere.com">youbute.pythonanywhere.com</a>
+  <b>Home Page</b>
+  <hr>
+    <img src="https://github.com/lnxpy/youbute/blob/master/shots/sh1.png"><br>
+  <b>Service Side</b>
 </p>
 
 # ToDo List
