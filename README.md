@@ -21,7 +21,7 @@ Now, you should have such a thing on your local browser. You can change the temp
   <b>Home Page</b> - <a href="https://youbute.pythonanywhere.com">youbute.pythonanywhere.com</a>
 </p>
 
-# TODO list
+# ToDo List
 - [x] Designing the templates
 - [x] YouTube downloader platform
 - [ ] SoundCloud downloader platform
