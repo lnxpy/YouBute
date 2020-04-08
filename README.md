@@ -2,7 +2,7 @@
 
 Django-based website to store unavailable media centers. You can download any media from YouTube and SoundCloud for free. One of the important things about YouBute is that it's free and available for anyone. It has deployed on the PythonAnyWhere server which makes it accessible for any user anywhere. Use YouBute [here](https://youbute.pythonanywhere.com).
 
-# Set it Up
+### Set it Up
 I prefer you to watch the [Postern process](https://github.com/lnxpy/postern) to set up YouBute locally.
 You just need to..
 
@@ -13,7 +13,7 @@ You just need to..
 
 __All these steps are explained in the Postern process__.
 
-# Preview
+### Preview
 Now, you should have such a thing on your local browser. You can change the templates, add new views, add new features, and make it ready for the deployment on your specific server. Enjoy it.
 
 <p align="center">
@@ -23,7 +23,7 @@ Now, you should have such a thing on your local browser. You can change the temp
   <b>Service Side</b>
 </p>
 
-# ToDo List
+### ToDo List
 - [x] Designing the templates
 - [x] YouTube downloader platform
 - [ ] SoundCloud downloader platform
@@ -39,4 +39,4 @@ Now, you should have such a thing on your local browser. You can change the temp
 ### Fork
 Fork and develop are free for everyone. Be sure I'll check your push requests out.
 
-###### Made with ❤
+###### Made with :heart:
