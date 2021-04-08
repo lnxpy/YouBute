@@ -6,7 +6,7 @@ bs4==0.0.1
 celery==4.4.1
 certifi==2019.11.28
 chardet==3.0.4
-Django==3.0.4
+Django==3.0.14
 geoip2==3.0.0
 idna==2.9
 importlib-metadata==1.5.0
